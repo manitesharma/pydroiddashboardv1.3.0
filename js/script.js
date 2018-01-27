@@ -36,3 +36,84 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
+
+/* google charts code */
+
+ google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      google.charts.setOnLoadCallback(drawChart2);
+      google.charts.setOnLoadCallback(drawChart3);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Attandance',     16],
+          ['missed',      4]
+        ]);
+
+        var options = {
+           legend: {position: 'none'},
+            pieHole: 0.4,
+            backgroundColor: 'transparent',
+            slices: {
+            
+          }
+        };
+          var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+        
+      }
+          
+    function drawChart2() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Completed',     1],
+          ['missed',      0],
+            ['Late',      1]
+        ]);
+
+        var options = {
+           legend: {position: 'none'},
+            pieHole: 0.4,
+            backgroundColor: 'transparent',
+            slices: {
+            
+          }
+        };
+        
+        
+        
+          
+          var chart = new google.visualization.PieChart(document.getElementById('donutchart2'));
+        chart.draw(data, options);
+        
+      }
+      
+    function drawChart3() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Completed Assignments',     9],
+          ['Missed',      1],
+          ['Late',      2]
+        ]);
+
+        var options = {
+           legend: {position: 'none'},
+            pieHole: 0.4,
+            backgroundColor: 'transparent',
+            slices: {
+            
+          }
+        };
+        
+        
+        
+          
+          var chart = new google.visualization.PieChart(document.getElementById('donutchart3'));
+        chart.draw(data, options);
+        
+      }
+
+/* googe chart ends here */
+
+
+

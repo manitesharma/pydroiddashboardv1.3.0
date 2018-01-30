@@ -306,8 +306,11 @@ body::-webkit-scrollbar-thumb
 }
 .button-secrate{
     float: right;
-    padding: 0.5em 0em;
+    padding: 0.7em 1em;
+    margin: 0.8em 0em;
+    border-radius: 2px;
     color: #fff;
+    background-color: #fff5;
 }
 .notice-list{
     float: left;
@@ -1032,6 +1035,9 @@ div.tab button.active {
     width: 60%;
     padding: 2% 5%;
     background: #f6f6f6;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: all 150ms;
 }
 .project-list-iteam{
     float: left;
@@ -1154,6 +1160,7 @@ div.tab button.active {
 .accordion {
     background-color: transparent;
     color: #3a3a3a;
+    background-color: #0000000a;
     cursor: pointer;
     padding: 18px 2%;
     width: 98%;
@@ -1165,10 +1172,21 @@ div.tab button.active {
     transition: 0.4s;
     float: left;
 }
-
+.checkpoint > .accordion:after{
+    transition: all 150ms;
+    content: '\f107';
+    font-family: Fontawesome;
+    position: relative;
+    left: 95%;
+    float: left;
+}
+.checkpoint > .active:after{
+    transition: all 150ms;
+    transform: rotate(180deg);
+}
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active {
-    background-color: #f6f6f6;
+    background-color: #0000000a;
 }
 .accordion:hover{
     background-color: #0001;
@@ -1316,3 +1334,31 @@ th:nth-child(1) {
 }
 /* lesson list css ends here */
 
+
+/* report page css starts here */
+
+.repo-info{
+    float: left;
+    width: 60%;
+    margin: 7% 3%;
+}
+.repo-info > .seprate{
+    float: left;
+    width: 35%;
+}
+.repo-info > .seprate > .ma1{
+    float: left;
+    width: 90%;
+    padding: 0.5em 5%;
+    margin: 0em;
+    font-size: 1.2em;
+    border-right: 2px solid #f6f6f6;
+}
+.repo-info > .ma2{
+    float: left;
+    width: 50%;
+    padding: 1.5em 5%;
+    margin: 0em;
+    font-size: 1.5em;
+}
+/* report page css ends here */

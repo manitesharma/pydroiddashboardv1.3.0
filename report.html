@@ -6,6 +6,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 
 	  <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    
+    
 </head>
 <body>
     <!-- left menu section starts here -->
@@ -31,185 +35,195 @@
        
          <!-- logo division ends here -->
          <div class="nav-inner-right">
-                <h3>Manage all your Projects here</h3>
+                <h3>All your dirty little secrates here</h3>
          </div>
     </div>
     <!-- top navbar section starts here -->
         
         <div class="left-mid">
-            <!-- modal section starts here -->
-            
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-     <p class="lecture-heading">Topic 2 Python Scripts Using Game Activities</p>
-      
-      <!-- tabs starts here -->
-
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'video-lecture')">Video Lecture</button>
-  <button class="tablinks" onclick="openCity(event, 'notes')">Notes</button>
-  <button class="tablinks" onclick="openCity(event, 'resources')">Resources Links</button>
-</div>
-
-<div id="video-lecture" class="tabcontent">
-  <iframe class="embaded-video" width="85%" height="550" src="https://www.youtube.com/embed/kJQP7kiw5Fk">
-</iframe>
-</div>
-
-<div id="notes" class="tabcontent">
-   <p class="underprocess">Under process need to discuss the implemantation</p>
-</div>
-
-<div id="resources" class="tabcontent">
-    <div class="resource-link">
-        <h3 class="link-heading">LInk heading 1</h3>
-        <a class="link-content" href="#">https://www.w3schools.com/w3css/w3css_tabulators.asp</a>
-    </div>
-    <div class="resource-link">
-        <h3 class="link-heading">LInk heading 1</h3>
-        <a class="link-content" href="#">https://www.w3schools.com/w3css/w3css_tabulators.asp</a>
-    </div>
-    <div class="resource-link">
-        <h3 class="link-heading">LInk heading 1</h3>
-        <a class="link-content" href="#">https://www.w3schools.com/w3css/w3css_tabulators.asp</a>
-    </div>
-</div>
-      <!-- tabs ends here -->
-      
-           </div>
-  </div>
-
-
-            <!-- modal section ends here -->
-            <h3 class="direct-head">Attandance summary</h3>
+            <h3 class="direct-head">Attandance Report</h3>
 	   <div class="class-structure card">
-            
-           <div class="structure-list">
-                <p class="attand-mark present">30%</p>
-               <p class="date">30 / 100</p>
-               <p class="topic-name">Critical attandance attend class regularly</p>
+          <div id="donutchart4" class="summary-chart"></div>
+           <div class="repo-info">
+                <div class="seprate">
+                    <p class="ma1">16 Present</p>
+                    <p class="ma1">04 Absent</p>
+               </div>
+               <p class="ma2">30 Total Classes</p>
            </div>
-           <!-- classs structure list ends here -->
         </div>
-            <h3 class="direct-head">Project Summary</h3>
+           
+                <h3 class="direct-head">Projects Report</h3>
 	   <div class="class-structure card">
-            
-           <div class="structure-list">
-               <p class="date"><i class="fa fa-check-circle-o" aria-hidden="true"></i> 30 / 40 Checkpoint passed</p>
-               <p class="topic-name">Tic Tac Toe game with Python</p>
+          <div id="donutchart5" class="summary-chart"></div>
+           <div class="repo-info">
+                <div class="seprate">
+                    <p class="ma1">01 Submitted</p>
+                    <p class="ma1">01 Late</p>
+                    <p class="ma1">00 Missed</p>
+               </div>
+               <p class="ma2">2 Total Projects</p>
            </div>
-           <!-- classs structure list ends here -->
-           <div class="structure-list">
-               <p class="date"><i class="fa fa-check-circle-o" aria-hidden="true"></i> 30 / 40 Checkpoint passed</p>
-               <p class="topic-name">Tic Tac Toe game with Python</p>
-           </div>
-           <!-- classs structure list ends here -->
+          <div id="projectchart" style="width: 100%; height: 150px; float: left;"></div>
         </div>
-            <h3 class="direct-head">Assignment Summary</h3>
+            
+           
+            
+              <h3 class="direct-head">Assignment Report</h3>
 	   <div class="class-structure card">
-            
-           <div class="structure-list">
-               <p class="date"><i class="fa fa-check-circle-o" aria-hidden="true"></i> 30 / 40 Checkpoint passed</p>
-               <p class="topic-name">Tic Tac Toe game with Python</p>
+          <div id="donutchart6" class="summary-chart"></div>
+           <div class="repo-info">
+                <div class="seprate">
+                    <p class="ma1">09 Submitted</p>
+                    <p class="ma1">02 Late</p>
+                    <p class="ma1">01 Missed</p>
+               </div>
+               <p class="ma2">12 Total Assignments</p>
            </div>
-           <!-- classs structure list ends here -->
-           <div class="structure-list">
-               <p class="date"><i class="fa fa-check-circle-o" aria-hidden="true"></i> 30 / 40 Checkpoint passed</p>
-               <p class="topic-name">Tic Tac Toe game with Python</p>
-           </div>
-           <!-- classs structure list ends here -->
-           <div class="structure-list">
-               <p class="date"><i class="fa fa-check-circle-o" aria-hidden="true"></i> 30 / 40 Checkpoint passed</p>
-               <p class="topic-name">Tic Tac Toe game with Python</p>
-           </div>
-           <!-- classs structure list ends here -->
-           <div class="structure-list">
-               <p class="date"><i class="fa fa-check-circle-o" aria-hidden="true"></i> 30 / 40 Checkpoint passed</p>
-               <p class="topic-name">Tic Tac Toe game with Python</p>
-           </div>
-           <!-- classs structure list ends here -->
-           <div class="structure-list">
-               <p class="date"><i class="fa fa-check-circle-o" aria-hidden="true"></i> 30 / 40 Checkpoint passed</p>
-               <p class="topic-name">Tic Tac Toe game with Python</p>
-           </div>
-           <!-- classs structure list ends here -->
-        </div>
-        </div>
-        
-        <div class="right-mid">
-            
-	   <div class="notices">
-            <h3 class="direct-head">Upcoming Scheduals</h3>
-           <div class="notice-list card">
-               <p class="notice"><span class="notice-time">11-04-2017 - 11:00AM</span><span class="notice-disc">Topic 11 : Anchors</span></p>
-               <p class="notice"><span class="notice-time">13-04-2017 - 11:00AM</span><span class="notice-disc"> Topic 12 : The science of Avaliablity</span></p>
-               <p class="notice"><span class="notice-time">11-04-2017 - 11:00AM</span><span class="notice-disc">Topic 13 : Well Hello there</span></p>
-               <p class="notice"><span class="notice-time">11-04-2017 - 11:00AM</span><span class="notice-disc"> Topic 14 : Xyz topic again</span></p>
-               <p class="notice"><span class="notice-time">11-04-2017 - 11:00AM</span><span class="notice-disc">Topic 11 : Anchors</span></p>
-           </div>
-           <!-- notice list ends here -->
-
-        </div>
-            <!-- notice section ends here -->
-            
-	   <div class="notices">
-            <h3 class="direct-head">Active Projects</h3>
-           <!-- notice list ends here -->
-           
-           <div class="notice-list card">
-               <a href="projects.html#1">
-               <p class="notice"><span class="notice-time">2 days left</span><span class="notice-disc">Make a website using xyz language with these features</span></p>
-           </a>
-               <a href="projects.html#1">
-               <p class="notice"><span class="notice-time">2 days left</span><span class="notice-disc">Make a poster for Pydroid</span></p>
-           </a>
-            
-           </div>
-              
-           <!-- notice list ends here -->
+            <div id="assignmentchart" style="width: 100%; height: 900px; float: left;"></div>
            
         </div>
-            <!-- notice section ends here -->
-        <div class="notices">
-            <h3 class="direct-head">Active Assignments</h3>
-           <!-- notice list ends here -->
-           
-           <div class="notice-list card">
-               <a href="assignments.html">
-               <p class="notice"><span class="notice-time">2 days left</span><span class="notice-disc">Make a website using xyz language with these features</span></p>
-           </a>
-               <a href="assignments.html">
-               <p class="notice"><span class="notice-time">2 days left</span><span class="notice-disc">Make a poster for Pydroid</span></p>
-           </a>
-               <a href="assignments.html">
-               <p class="notice"><span class="notice-time">1 days left</span><span class="notice-disc">Make a poster for Pydroid</span></p>
-           </a>
-               <a href="assignments.html">
-               <p class="notice"><span class="notice-time">2 days left</span><span class="notice-disc">Make a poster for Pydroid</span></p>
-           </a>
-               <a href="assignments.html">
-               <p class="notice"><span class="notice-time">5 days left</span><span class="notice-disc">Make a poster for Pydroid</span></p>
-           </a>
             
-           </div>
-              
-           <!-- notice list ends here -->
-           
+            
         </div>
-            <!-- notice section ends here -->
-
-        </div>
-
         
     </div>
 <!-- middle section ends here -->
     <script src="https://use.fontawesome.com/1bd21ecc06.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+    
+<script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart4);
+    
+    
+    function drawChart4() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Attandance',     16],
+          ['missed',      4]
+        ]);
+
+        var options = {
+           legend: {position: 'none'},
+            pieHole: 0.4,
+            backgroundColor: 'transparent',
+            slices: {
+            
+          }
+        };
+          var chart = new google.visualization.PieChart(document.getElementById('donutchart4'));
+        chart.draw(data, options);        
+      }
+    
+    google.charts.setOnLoadCallback(drawChart5);
+    function drawChart5() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Completed',     1],
+          ['missed',      0],
+            ['Late',      1]
+        ]);
+
+        var options = {
+           legend: {position: 'none'},
+            pieHole: 0.4,
+            backgroundColor: 'transparent',
+            slices: {
+            
+          }
+        };
+         
+          var chart = new google.visualization.PieChart(document.getElementById('donutchart5'));
+        chart.draw(data, options);
+        
+      }
+    
+        google.charts.setOnLoadCallback(drawChart6);
+    function drawChart6() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Completed Assignments',     9],
+          ['Missed',      1],
+          ['Late',      2]
+        ]);
+
+        var options = {
+           legend: {position: 'none'},
+            pieHole: 0.4,
+            backgroundColor: 'transparent',
+            slices: {
+            
+          }
+        };
+         
+          var chart = new google.visualization.PieChart(document.getElementById('donutchart6'));
+        chart.draw(data, options);
+        
+      }
+    
+    /* bar chart script goes here */
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawStacked);
+
+function drawStacked() {
+      var data = google.visualization.arrayToDataTable([
+        ['Assignment name', 'Awarded Points', 'Total Points'],
+        ['Assignment 1', 12, 20],
+          ['Assignment 2', 12, 20],
+          ['Assignment 3', 19, 20],
+          ['Assignment 4', 14, 22],
+          ['Assignment 5', 9, 10],
+          ['Assignment 6', 5, 23],
+          ['Assignment 7', 12, 28],
+          ['Assignment 8', 12, 14],
+          ['Assignment 9', 12, 20],
+          ['Assignment 10', 12, 25],
+          ['Assignment 11', 11, 20],
+          ['Assignment 12', 0, 30],
+      ]);
+
+      var options = {
+        title: 'Assignment points',
+        chartArea: {width: '50%'},
+        isStacked: true,
+        hAxis: {
+          title: '',
+          minValue: 0,
+        },
+        vAxis: {
+          title: ''
+        }
+      };
+      var chart = new google.visualization.BarChart(document.getElementById('assignmentchart'));
+      chart.draw(data, options);
+    }
+    
+    google.charts.setOnLoadCallback(drawStacked2);
+
+function drawStacked2() {
+      var data = google.visualization.arrayToDataTable([
+        ['Project name', 'Awarded Points', 'Total Points'],
+        ['Project 1', 120, 210],
+          ['Project 2', 0, 150],
+      ]);
+
+      var options = {
+        title: 'Project points',
+        chartArea: {width: '50%'},
+        isStacked: true,
+        hAxis: {
+          title: '',
+          minValue: 0,
+        },
+        vAxis: {
+          title: ''
+        }
+      };
+      var chart = new google.visualization.BarChart(document.getElementById('projectchart'));
+      chart.draw(data, options);
+    }
+    </script>
 </body>
 </html>

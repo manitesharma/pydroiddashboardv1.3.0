@@ -113,6 +113,35 @@ for (i = 0; i < acc.length; i++) {
         
       }
 
+
+
+google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart4);
+    function drawChart4() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Completed Assignments',     9],
+          ['Missed',      1],
+          ['Late',      2]
+        ]);
+
+        var options = {
+           legend: {position: 'none'},
+            pieHole: 0.4,
+            backgroundColor: 'transparent',
+            slices: {
+            
+          }
+        };
+        
+        
+        
+          
+          var chart = new google.visualization.PieChart(document.getElementById('donutchart4'));
+        chart.draw(data, options);
+        
+      }
+
 /* googe chart ends here */
 
 

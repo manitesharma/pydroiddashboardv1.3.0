@@ -1172,7 +1172,13 @@ div.tab button.active {
     transition: 0.4s;
     float: left;
 }
-.checkpoint > .accordion:after{
+.marks > .accordion{
+    width: 100%;
+    background-color: transparent;
+    margin: 0%;
+    border-top: 1px solid #f6f6f6;
+}
+.checkpoint > .accordion:after , .marks > .accordion:after{
     transition: all 150ms;
     content: '\f107';
     font-family: Fontawesome;
@@ -1180,7 +1186,10 @@ div.tab button.active {
     left: 95%;
     float: left;
 }
-.checkpoint > .active:after{
+.marks > .active{
+    transition: all 150ms;
+}
+.checkpoint > .active:after , .marks > .active:after{
     transition: all 150ms;
     transform: rotate(180deg);
 }
@@ -1201,7 +1210,11 @@ div.tab button.active {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-
+.marks > .panel {
+    margin: 0%;
+    padding: 0% 5%;
+    background: #f6f6f6;
+}
 .panel > table {
     width: 100%;
     float: left;
@@ -1360,5 +1373,52 @@ th:nth-child(1) {
     padding: 1.5em 5%;
     margin: 0em;
     font-size: 1.5em;
+}
+
+
+.collective-summ{
+    float: left;
+    width: 100%;
+    margin: 0%;
+}
+
+.all-grade{
+    float: left;
+    width: 100%;
+    padding: 4% 0%;
+    background-color: #4a5781;
+    color: #fff;
+}
+.grade{
+    float: left;
+    width: 100%;
+}
+.grade-disc{
+    float: left;
+    width: 100%;
+}
+.grade-disc > p{
+    float: left;
+    width: 90%;
+    margin: 1em 5%;
+    font-weight: 600;
+}
+.grade > p{
+    float: left;
+    width: 100%;
+    margin: 0em;
+    font-size: 2em;
+    padding: 1em 0em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.ac1{
+    float: left;
+    width: 60%;
+}
+.ac2{
+    float: left;
+    width: 20%;
 }
 /* report page css ends here */

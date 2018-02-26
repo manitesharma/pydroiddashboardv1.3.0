@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb
     z-index: 9;
 	left: 0%;
 	top: 0%;
-    background: #4a5781;
+    background: #091d5f;
     color: #fff;
     padding:0%;
 	height: 100vh;
@@ -64,8 +64,7 @@ body::-webkit-scrollbar-thumb
     font-size: 0.85em;
 }
 .nav-link:hover{
-    transition: all 200ms;
-	background-color:#5f6b9140;
+	background-color:#5f6b9170;
 }
 .others{
 	width: 1.5em;
@@ -77,6 +76,9 @@ body::-webkit-scrollbar-thumb
 .active-nav{
     background-color:#5f6b91;
     border-left: 5px solid #fff;
+}
+.active-nav:hover{
+    background-color:#5f6b91;
 }
 .nav-link .tooltiptext {
     text-align: left;
@@ -129,11 +131,14 @@ body::-webkit-scrollbar-thumb
     float: left;
     width: 100%;
     margin: 0% 0% 10%;
+    background-color: #ff8c16;
+    background: -webkit-linear-gradient(-47deg, #fe7424, #ffb116);
+    background: linear-gradient(-47deg, #fe7424, #ffb116);
 }
 .brand-logo-img{
     float: left;
     width: 90%;
-    padding:8% 5%;
+    padding:9% 5%;
 }
 
 .profile-button{
@@ -927,7 +932,7 @@ div.tab button.active {
         3em;
 }
 .input-fields{
-    padding: 0.8em 0em;
+    padding: 1em 0em;
 }
 .input-text{
     float: left;
@@ -941,16 +946,20 @@ div.tab button.active {
 .input-submit-button{
     float: left;
     width: 20%;
-    background-color: cornflowerblue;
-    color: #3a3a3a;
-    box-shadow: none;
     border: 0px;
     border-radius: 2px;
+
+    text-align: center;
+    background-color: #5e7ee8;
+    color: #fff;
+    box-shadow: 0px 15px 20px -9px #0004;
     
 }
 .input-submit-button:hover{
     transition: all 150ms;
-    box-shadow: 0px 10px 15px -3px #0004;
+    /* background-color: #b2c1f260; */
+    box-shadow: 0px 4px 5px -2px #0004;
+    transform: translateY(2px);
 }
 .repo-link{
     float: left;
@@ -1028,14 +1037,12 @@ div.tab button.active {
     width: 30%;
     border-right: 0px solid #0002;
     height: 100%;
-    overflow: scroll;
 }
 .project-content{
     float: left;
     width: 60%;
     padding: 2% 5%;
     background: #f6f6f6;
-    overflow-y: scroll;
     overflow-x: hidden;
     transition: all 150ms;
 }
@@ -1045,8 +1052,8 @@ div.tab button.active {
     width: 94%;
     border-bottom: 1px solid #f6f6f6;
 }
-.project-list-iteam:hover{
-    background-color: #4a578150;
+.project-list-iteam:hover , .structure-list:hover{
+    background-color: #a5baff;
     cursor: pointer;
 }
 .project-list-iteam >h4 {
@@ -1068,21 +1075,26 @@ div.tab button.active {
 .status > span {
     padding: 0.3em 0.5em;
     margin-right: 1em;
-    min-width: 7em;
+    min-width: 5em;
     float: left;
 }
 /* status color css here */
 .status-indicator{
     font-size: 1em;
     border-radius: 2px;
-    color: #fff;
 }
 .status-indicator:before{
     font-family: FontAwesome;
     content: "\f14a ";
+    
+}
+.status-indicator:after{
+    content: " Completed";
+    
 }
 .open{
     background-color: #34db87;
+    color: #fff;
 }
 .open:before{
     font-family: FontAwesome;
@@ -1093,6 +1105,7 @@ div.tab button.active {
 }
 .missed{
     background-color: #f00;
+    color: #fff;
 }
 .missed:before{
     font-family: FontAwesome;
@@ -1103,6 +1116,7 @@ div.tab button.active {
 }
 .submitted{
     background-color: cornflowerblue;
+    color: #fff;
 }
 .submitted:before{
     font-family: FontAwesome;
@@ -1113,6 +1127,7 @@ div.tab button.active {
 }
 .late{
     background-color: #ffbc00;
+    color: #fff;
 }
 .late:before{
     font-family: FontAwesome;
@@ -1246,8 +1261,9 @@ th:nth-child(1) {
 .link-input > p{
     float: left;
     font-size: 0.9em;
-    width: 100%;
-    padding: 0% 0%;
+    width: 98%;
+    padding: 1% 1%;
+    border-radius: 4px;
     color: #000;
 }
 .hide{
@@ -1264,8 +1280,8 @@ th:nth-child(1) {
 
 .summry-content{
     float: left;
-    width: 96%;
-    padding: 3% 2%;
+    width: 100%;
+    padding: 0%;
 }
 .summry-content > p{
     float: left;
@@ -1289,13 +1305,18 @@ th:nth-child(1) {
     float: right;
     text-align: center;
     padding: 1em 2em;
-    background-color: #4a578110;
+    background-color: #5e7ee8;
+    color: #fff;
+    margin: 0.5em 1.5em 1.5em;
     text-decoration: none;
-    margin: 1em;
+    box-shadow: 0px 15px 20px -9px #0004;
+    border-radius: 2px;
 }
 .report-button:hover{
     transition: all 150ms;
-    background-color: #4a578160;
+    /* background-color: #b2c1f260; */
+    box-shadow: 0px 4px 5px -2px #0004;
+    transform: translateY(2px);
 }
 
 /* lesson list css starts here */
@@ -1421,4 +1442,6 @@ th:nth-child(1) {
     float: left;
     width: 20%;
 }
+
+rect[stroke-opacity]{stroke-width:0 !important;}
 /* report page css ends here */

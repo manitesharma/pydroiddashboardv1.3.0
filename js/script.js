@@ -56,7 +56,8 @@ for (i = 0; i < acc.length; i++) {
             backgroundColor: 'transparent',
             slices: {
             
-          }
+          },
+        colors: ['#5a87e3', '#fc4b4b', '#ff8c16']
         };
           var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         chart.draw(data, options);
@@ -77,7 +78,8 @@ for (i = 0; i < acc.length; i++) {
             backgroundColor: 'transparent',
             slices: {
             
-          }
+          },
+        colors: ['#5a87e3', '#fc4b4b', '#ff8c16']
         };
         
         
@@ -102,7 +104,8 @@ for (i = 0; i < acc.length; i++) {
             backgroundColor: 'transparent',
             slices: {
             
-          }
+          },
+        colors: ['#5a87e3', '#fc4b4b', '#ff8c16']
         };
         
         
